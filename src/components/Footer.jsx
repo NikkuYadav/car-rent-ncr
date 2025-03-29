@@ -31,7 +31,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h3 className="font-semibold text-2xl mb-3 pt-12">Quick Links</h3>
+          <h3 className="font-semibold text-2xl mb-3 md:pt-12">Quick Links</h3>
           <ul className="space-y-2 text-lg pl-2">
             <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
             <li><Link to="/about" onClick={scrollToTop}>About</Link></li>
@@ -42,7 +42,7 @@ const Footer = () => {
 
         {/* Helpful Links */}
         <div className="hidden md:block">
-          <h3 className="font-semibold text-2xl mb-3 pt-12">Helpful Links</h3>
+          <h3 className="font-semibold text-2xl mb-3 md:pt-12">Helpful Links</h3>
           <ul className="space-y-2 text-sm">
             <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
             <li><Link to="/about" onClick={scrollToTop}>About</Link></li>
@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* Contact Section */}
         <div>
-          <h3 className="font-semibold text-2xl mb-3 pt-12">Reach Us</h3>
+          <h3 className="font-semibold text-2xl mb-3 md:pt-12">Reach Us</h3>
           <p className="text-sm">
             ORIX Corporation India Limited <br />
             Plot No - 94, Marol Co-operative Industrial Estate, Andheri-Kurla Road, Andheri(E), Mumbai - 400059

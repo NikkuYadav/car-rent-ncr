@@ -3,7 +3,7 @@ import { assets } from "../../assets/assets";
 const HeroSection = () => {
     return (
       <div
-        className="relative w-full h-[50vh] md:h-80 flex flex-col items-center justify-center text-center text-white px-4 md:px-0"
+        className="relative w-full h-[60vh] md:h-80 flex flex-col items-center justify-center text-center text-white px-4 md:px-0"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${assets.threecars1})`,
           backgroundSize: "cover",
