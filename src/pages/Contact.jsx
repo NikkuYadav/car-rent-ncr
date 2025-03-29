@@ -26,10 +26,11 @@ const Contact = () => {
   return (
     <div>
       {/* Banner Section */}
+      {/* linear-gradient(rgba(9, 68, 124, 0.2), rgba(9, 68, 124, 0.7)),  */}
       <div
         className="relative h-[300px] flex items-center justify-center text-white text-4xl font-bold"
         style={{
-          backgroundImage: `linear-gradient(rgba(9, 68, 124, 0.2), rgba(9, 68, 124, 0.7)), url(${assets.contact})`,
+          backgroundImage: `url(${assets.contact})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "brightness(1.2)",
