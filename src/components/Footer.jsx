@@ -5,6 +5,10 @@ import { FaSquareWhatsapp } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { assets } from "../assets/assets";
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 const Footer = () => {
   return (
     <footer
@@ -29,10 +33,10 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold text-2xl mb-3 pt-12">Quick Links</h3>
           <ul className="space-y-2 text-lg pl-2">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
+            <li><Link to="/about" onClick={scrollToTop}>About</Link></li>
+            <li><Link to="/services" onClick={scrollToTop}>Services</Link></li>
+            <li><Link to="/contact" onClick={scrollToTop}>Contact</Link></li>
           </ul>
         </div>
 
@@ -40,11 +44,11 @@ const Footer = () => {
         <div className="hidden md:block">
           <h3 className="font-semibold text-2xl mb-3 pt-12">Helpful Links</h3>
           <ul className="space-y-2 text-sm">
-            <li>Home</li>
-            <li>About</li>
-            <li>Blogs</li>
-            <li>Sitemap</li>
-            <li>Agent Login</li>
+            <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
+            <li><Link to="/about" onClick={scrollToTop}>About</Link></li>
+            <li><Link to="/blogs" onClick={scrollToTop}>Blogs</Link></li>
+            <li><Link to="/sitemap" onClick={scrollToTop}>Sitemap</Link></li>
+            <li><Link to="/agent-login" onClick={scrollToTop}>Agent Login</Link></li>
           </ul>
         </div>
 
@@ -62,7 +66,6 @@ const Footer = () => {
           </p>
           <div className="flex space-x-4 mt-4">
             <ul className='flex gap-5'>
-
               <li><a href="#"><RiInstagramFill size={25} /></a></li>
               <li><a href="#"><FaSquareWhatsapp size={25} /></a></li>
             </ul>
