@@ -46,7 +46,7 @@ const About = () => {
 
         </div>
 
-        <div className="md:w-1/2 ml-4 pt-4 md:pt-0">
+        <div className="md:w-1/2 md:ml-4 pt-4 md:pt-0">
           {/* Image Covering Full Background */}
           <img
             src={assets.riding}

@@ -40,9 +40,9 @@ const Contact = () => {
       </div>
 
       {/* Contact Cards */}
-      <div className="max-w-6xl mx-auto py-10 text-center">
+      <div className="max-w-6xl mx-auto py-10 text-center px-4">
         <h2 className="text-2xl font-bold text-primary mb-6">Contact Us Through!</h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {contacts.map((contact, index) => (
             <div
               key={index}
@@ -53,7 +53,7 @@ const Contact = () => {
             >
               <div className="bg-white bg-opacity-20 p-4 rounded-full mb-4">{contact.icon}</div>
               <h3 className="text-lg font-bold">{contact.title}</h3>
-              <p className="text-sm">{contact.detail}</p>
+              <p className="text-sm text-center">{contact.detail}</p>
             </div>
           ))}
         </div>
@@ -61,17 +61,17 @@ const Contact = () => {
 
       {/* Embed Map */}
 
-      <div style={{ position: "relative" }} className="py-3">
-      <div style={{ position: "relative", paddingBottom: "25%", height: 0, overflow: "hidden" }}>
-        <iframe
-          style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
-          loading="lazy"
-          allowFullScreen
-          src="https://maps.google.com/maps?q=gali+no-15+near+jagarnath+mandir+sector-121+Noida+uttarpradesh&output=embed"
-          title="Google Map"
-        ></iframe>
+      <div style={{ position: "relative" }} className="pb-3">
+        <div style={{ position: "relative", paddingBottom: "25%", height: 0, overflow: "hidden" }}>
+          <iframe
+            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+            loading="lazy"
+            allowFullScreen
+            src="https://maps.google.com/maps?q=gali+no-15+near+jagarnath+mandir+sector-121+Noida+uttarpradesh&output=embed"
+            title="Google Map"
+          ></iframe>
+        </div>
       </div>
-    </div>
     </div>
   );
 };
