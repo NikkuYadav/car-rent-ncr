@@ -8,16 +8,18 @@ import CarRatesTable from "./CarRatesTable";
 
 const OurPackages = () => {
   const [packages] = useState([
-    { id: 1, name: "Scorpio N", image: assets.car2, price: 4500 },
-    { id: 2, name: "Maruti Swift", image: assets.car1, price: 2200 },
-    { id: 3, name: "Hyundai Creta", image: assets.car4, price: 3500 },
+    { id: 1, name: "Scorpio N", image: assets.scorpio, price: 5000 },
+    { id: 2, name: "Maruti Swift", image: assets.swift, price: 2200 },
+    { id: 3, name: "Hyundai Creta", image: assets.creta, price: 3500 },
     { id: 4, name: "Hyundai Venue", image: assets.car6, price: 3000 },
-    { id: 5, name: "Maruti Dzire", image: assets.car7, price: 2500 },
-    { id: 6, name: "Maruti Fronx", image: assets.car8, price: 2800 },
-    { id: 7, name: "Toyota Innova Crysta", image: assets.car9, price: 4500 },
-    { id: 8, name: "Maruti Baleno", image: assets.car5, price: 2400 },
-    { id: 9, name: "Toyota Glenza", image: assets.car11, price: 2800 },
-    { id: 10, name: "Maruti Breeza", image: assets.car10, price: 3000 },
+    { id: 5, name: "Maruti Dzire", image: assets.dzire, price: 2500 },
+    { id: 6, name: "Maruti Fronx", image: assets.fonex, price: 2800 },
+    { id: 7, name: "Toyota Innova Crysta", image: assets.crysta, price: 4500 },
+    { id: 8, name: "Maruti Baleno", image: assets.baleno, price: 2400 },
+    { id: 9, name: "Toyota Glenza", image: assets.glanza, price: 2800 },
+    { id: 10, name: "Maruti Breeza", image: assets.brezza, price: 3000 },
+    { id: 11, name: "Toyota Fortuner", image: assets.fortuner, price: 3000 },
+    { id: 12, name: "Mahindra Thar", image: assets.thar, price: 3000 },
   ]);
 
   return (

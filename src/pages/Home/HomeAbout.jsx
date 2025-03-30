@@ -11,9 +11,9 @@ const HomeAbout = () => {
   const images = [
     assets.car6,
     assets.car2,
-    assets.car4,
-    assets.car8,
-    assets.car5,
+    assets.brezza,
+    assets.scorpio,
+    assets.fortuner,
   ];
 
   const [isOpen, setIsOpen] = useState(false);

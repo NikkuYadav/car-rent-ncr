@@ -20,17 +20,17 @@ const Footer = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="grid md:grid-cols-4 gap-10 justify-center">
+      <div className="grid md:grid-cols-3 gap-10 justify-center ">
         {/* Left Section - Brand Info */}
         <div>
-          <img src={assets.logo} alt="Logo" />
-          <p className="text-sm mt-3 text-justify">
+          <img src={assets.logosvg} alt="CarRent Logo" className="mt-3" />
+          <p className="text-sm text-justify">
             If you are looking for a reliable and hassle-free car rental service in Delhi NCR, CarRent NCR is your ultimate destination for renting well-maintained cars with top-notch service. Whether you need a self-drive car for a road trip or a chauffeur-driven ride for a comfortable journey, we've got you covered!
           </p>
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className="md:ml-20">
           <h3 className="font-semibold text-2xl mb-3 md:pt-12">Quick Links</h3>
           <ul className="space-y-2 text-lg pl-2">
             <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
@@ -40,17 +40,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Helpful Links */}
-        <div className="hidden md:block">
-          <h3 className="font-semibold text-2xl mb-3 md:pt-12">Helpful Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
-            <li><Link to="/about" onClick={scrollToTop}>About</Link></li>
-            <li><Link to="/blogs" onClick={scrollToTop}>Blogs</Link></li>
-            <li><Link to="/sitemap" onClick={scrollToTop}>Sitemap</Link></li>
-            <li><Link to="/agent-login" onClick={scrollToTop}>Agent Login</Link></li>
-          </ul>
-        </div>
 
         {/* Contact Section */}
         <div>
@@ -66,8 +55,8 @@ const Footer = () => {
           </p>
           <div className="flex space-x-4 mt-4">
             <ul className='flex gap-5'>
-              <li><a href="#"><RiInstagramFill size={25} /></a></li>
-              <li><a href="#"><FaSquareWhatsapp size={25} /></a></li>
+              <li><a href="#"><RiInstagramFill size={25} className="hover:text-primary hover:bg-white" /></a></li>
+              <li><a href="#"><FaSquareWhatsapp size={25} className="hover:text-primary hover:bg-white" /></a></li>
             </ul>
           </div>
         </div>

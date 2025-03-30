@@ -7,9 +7,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between px-[8%] pb-2 bg-lime-50 relative">
+    <div className="flex items-center justify-between px-[8%]  bg-lime-50 relative">
       <div className="flex items-center">
-        <img src={assets.logo} className="w-40 h-12 cursor-pointer" alt="Logo" />
+        <img src={assets.logosvg} className="w-40 cursor-pointer mt-2" alt="CarRent Logo" />
       </div>
       
       {/* Hamburger Menu Icon */}
