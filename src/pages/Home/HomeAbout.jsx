@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -10,7 +10,7 @@ import { IoClose } from "react-icons/io5";
 const HomeAbout = () => {
   const images = [
     assets.car6,
-    assets.car2,
+    assets.car1,
     assets.brezza,
     assets.scorpio,
     assets.fortuner,
@@ -18,6 +18,7 @@ const HomeAbout = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [showMore, setShowMore] = useState(false); // State to toggle the third paragraph
 
   const openPopup = (index) => {
     setActiveIndex(index);
@@ -42,37 +43,76 @@ const HomeAbout = () => {
         <p className="mt-2 text-gray-700 text-sm md:text-base">
           With our top-quality <b>vehicle hire services in Delhi-NCR</b>, you’ll
           enjoy <b>great rates, easy online booking, and a hassle-free rental
-          experience</b>. Booking a car with us is simple—just visit our website
+            experience</b>. Booking a car with us is simple—just visit our website
           or give us a call, and we’ll ensure you get the best ride for your
           journey.
         </p>
-        <p className="mt-2 text-gray-700 text-sm md:text-base">
-          At <b>CarRent NCR</b>, we believe in treating our customers like
-          family. Your comfort and satisfaction are our top priorities. So,
-          relax, enjoy every moment of your trip, and create unforgettable
-          memories with your loved ones.
-        </p>
-        <button className="mt-4 px-6 py-2 bg-primary text-white shadow-md hover:bg-red-700 transition text-sm md:text-base">
-          Read More
+        {/* Third paragraph - Hidden initially */}
+        {showMore && (
+          <p className="mt-2 text-gray-700 text-sm md:text-base">
+            At <b>CarRent NCR</b>, we believe in treating our customers like
+            family. Your comfort and satisfaction are our top priorities. So,
+            relax, enjoy every moment of your trip, and create unforgettable
+            memories with your loved ones.
+          </p>
+        )}
+        {/* Read More / Read Less Button */}
+        <button
+          onClick={() => setShowMore(!showMore)}
+          className="mt-4 px-6 py-2 bg-primary text-white shadow-md hover:bg-red-700 transition text-sm md:text-base"
+        >
+          {showMore ? "Read Less" : "Read More"}
         </button>
       </div>
 
       {/* Image Grid */}
-      <div className="w-full md:w-1/2 grid grid-cols-2 gap-2 md:gap-4 relative">
-        {images.map((img, index) => (
-          <div
-            key={index}
-            className={`relative cursor-pointer ${index === 2 ? "col-span-2 row-span-2" : ""}`}
-            onClick={() => openPopup(index)}
+      <div className="w-full md:w-1/2">
+        {/* Image Slider for Small Screens */}
+        <div className="block md:hidden">
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            navigation
+            autoplay={{ delay: 3000 }}
+            loop
+            slidesPerView={1}
+            spaceBetween={10}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className="w-full"
           >
-            <img
-              src={img}
-              alt={`Car ${index + 1}`}
-              className="w-full h-full object-cover border-2 md:border-4 border-white shadow-lg"
-            />
-          </div>
-        ))}
+            {images.map((img, index) => (
+              <SwiperSlide key={index} onClick={() => openPopup(index)}>
+                <img
+                  src={img}
+                  alt={`Car ${index + 1}`}
+                  className="w-full h-56 object-cover border-2 border-white shadow-lg cursor-pointer"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        {/* Grid Layout for Medium and Larger Screens */}
+        <div className="hidden md:grid grid-cols-2 gap-2 md:gap-4 relative">
+          {images.map((img, index) => (
+            <div
+              key={index}
+              className={`relative cursor-pointer ${index === 2 ? "col-span-2 row-span-2" : ""}`}
+              onClick={() => openPopup(index)}
+            >
+              <img
+                src={img}
+                alt={`Car ${index + 1}`}
+                className="w-full h-full object-cover border-2 md:border-4 border-white shadow-lg"
+              />
+            </div>
+          ))}
+        </div>
       </div>
+
 
       {/* Popup Modal */}
       {isOpen && (

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
+import { FaCar } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
 import { assets } from "../../assets/assets";
@@ -26,11 +27,9 @@ const OurPackages = () => {
     <div className="relative w-full h-auto flex flex-col items-center justify-center py-12 px-4 md:px-0">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${assets.threecars2})`,
-          filter: "brightness(3)",
-        }}
-      ></div>
+        style={{ backgroundImage: `linear-gradient(rgba(34,193,195,1) , rgba(253,45,150,1))` }}>
+
+      </div>
 
       <div className="relative w-full max-w-5xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 uppercase tracking-wider">
@@ -50,22 +49,23 @@ const OurPackages = () => {
             1024: { slidesPerView: 3 },
           }}
         >
-          {packages.map((car) => (
-            <SwiperSlide key={car.id}>
-              <div className="bg-gray-800 shadow-xl rounded-lg overflow-hidden group">
-                <div className="relative overflow-hidden">
+           {packages.map((car, index) => (
+            <SwiperSlide key={index}>
+              <div className="bg-white shadow-lg rounded-lg p-4">
+                <div className="relative group overflow-hidden rounded-lg">
                   <img
                     src={car.image}
-                    alt={car.name}
-                    className="w-full h-40 md:h-52 object-cover transition-all duration-300 group-hover:scale-105"
+                    alt={car.model}
+                    className="w-full h-[200px] rounded-lg transition-transform duration-300 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300"></div>
                 </div>
-                <h3 className="py-2 text-base md:text-lg font-bold bg-white text-primary border border-t-4 border-primary">
-                  {car.name}
-                </h3>
-                <h3 className="pb-3 text-base md:text-lg font-bold bg-white text-primary">
-                  Price ₹{car.price}/day
-                </h3>
+                <div className="mt-4 text-center">
+                  <p className="text-indigo-700 font-semibold flex items-center justify-center gap-2">
+                    <FaCar /> Price ₹{car.price}/day
+                  </p>
+                  <p className="text-lg md:text-xl font-bold">{car.name}</p>
+                </div>
               </div>
             </SwiperSlide>
           ))}

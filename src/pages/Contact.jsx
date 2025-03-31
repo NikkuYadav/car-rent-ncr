@@ -9,12 +9,12 @@ const Contact = () => {
     {
       icon: <FaPhoneAlt size={40} className="text-white transition-transform duration-500 hover:rotate-[360deg]" />,
       title: "Phone NO",
-      detail: "+91 9876543210",
+      detail: "+91 8383801636",
     },
     {
       icon: <MdEmail size={40} className="text-white transition-transform duration-500 hover:rotate-[360deg]" />,
       title: "Email",
-      detail: "boomcars@email.com",
+      detail: "carrentncr@gmail.com",
     },
     {
       icon: <FaMapMarkerAlt size={40} className="text-white transition-transform duration-500 hover:rotate-[360deg]" />,
@@ -46,7 +46,7 @@ const Contact = () => {
           {contacts.map((contact, index) => (
             <div
               key={index}
-              className="bg-primary text-white p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform duration-300 hover:scale-105"
+              className="bg-primary text-white p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform duration-500 hover:scale-105"
               style={{
                 backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1))",
               }}

@@ -38,18 +38,15 @@ const Banner = () => {
 
                             {/* Foreground Content with CSS Animation */}
                             <div className="relative w-full h-full flex items-center justify-center text-white">
-                                <div className="text-center fade-in">
+                                <div className="text-center">
                                     <h1 className="text-5xl font-bold">Welcome to CarRent NCR</h1>
-                                    <p className="mt-2">Best vehicle hire in Delhi NCR with great rates and easy booking.</p>
-                                    <button className="mt-4 mx-auto px-6 py-3 border border-white text-white relative 
-                   transition-all duration-300 group flex items-center gap-2 hover:scale-x-110 rounded
-                   hover:bg-white/30 hover:backdrop-blur-lg">
-                                        Read More
-                                        <span className="inline-block transition-transform transform translate-x-2 opacity-0 
-                   group-hover:opacity-100 group-hover:translate-x-0">
-                                            <FaArrowCircleRight />
-                                        </span>
-                                    </button>
+                                    <p className="mt-2">If you’re looking for a reliable <b>Car rental service in Delhi-NCR</b>,
+                                    you’ve come to the right place... </p>
+                                    
+                                    <a href="tel:8383801636" className="mt-4 relative top-8  bg-primary hover:bg-sky-950 
+                                    transition-all duration-300 text-white px-6 py-3 rounded-lg shadow-md text-sm md:text-base">
+                                        Call Now +91-8383801636
+                                    </a>
 
                                 </div>
                             </div>

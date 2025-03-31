@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { assets } from "../../assets/assets";
-import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+
 
 const testimonials = [
   {
@@ -39,7 +39,8 @@ const testimonials = [
 
 const TestimonialSlider = () => {
   return (
-    <div className="relative bg-gray-300 p-8 ">
+    <div className="relative p-8 "
+    style={{ backgroundImage: `linear-gradient(rgba(34,193,195,1) , rgba(253,45,150,1))` }}>
       <h2 className="text-center text-3xl font-bold text-primary mb-6">
          Testimonials
       </h2>

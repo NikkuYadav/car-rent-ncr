@@ -5,25 +5,20 @@ const WhyChooseUs = () => {
   const features = [
     {
       icon: <FaBook className="text-primary text-5xl mx-auto" />,
-      title: "Easy Online Booking",
-      description: "Our website enables you to easily book a car for rent online.",
+      title: "Easy Booking",
+      description: "By Just calling us you can easily book a car for rent online.",
     },
-    {
-      icon: <FaGlobe className="text-primary text-5xl mx-auto" />,
-      title: "Professional Drivers",
-      description:
-        "We provide our clients with the best and most professional driver services possible.",
-    },
+    
     {
       icon: <FaCar className="text-primary text-5xl mx-auto" />,
       title: "Variety of Car Brands",
       description:
-        "We offer a wide range of automobile brands. Renting a car is an easy option.",
+        "Find the perfect car from our extensive collection. Easy booking, effortless travel!.",
     },
     {
       icon: <FaGooglePay className="text-primary text-5xl font-bold mx-auto" />,
       title: "Online Payment",
-      description: "Quickly rent a car, book, and pay for it online.",
+      description: "Book your car in minutes and complete payment online!",
     },
   ];
 
@@ -34,7 +29,7 @@ const WhyChooseUs = () => {
       </div>
 
       {/* Feature Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 lg:px-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 lg:px-20">
         {features.map((feature, index) => (
           <div
             key={index}

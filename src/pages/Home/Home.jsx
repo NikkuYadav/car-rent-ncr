@@ -5,6 +5,7 @@ import OurPackages from './OurPackages'
 import WhyChooseUs from './WhyChooseUs'
 import HeroSection from './HeroSection '
 import TestimonialSlider from './TestimonialSlider'
+import HowItWorks from '../../components/HowItWorks'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <OurPackages/>
       <WhyChooseUs/>
       <HeroSection/>
+      <HowItWorks/>
       <TestimonialSlider/>
     </div>
   )
