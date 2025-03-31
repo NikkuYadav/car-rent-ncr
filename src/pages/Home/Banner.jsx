@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { assets } from "../../assets/assets";
-import { FaArrowCircleRight } from "react-icons/fa";
 
 const Banner = () => {
     const images = [
