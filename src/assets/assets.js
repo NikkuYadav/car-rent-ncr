@@ -1,6 +1,9 @@
 import logo from './logo.svg'
 import logotrans from './logotrans.png'
 import logosvg from './logosvg.svg'
+import three1 from './three1.png'
+import three2 from './three2.jpg'
+import three3 from './three3.jpg'
 import threecars1 from './threecars1.jpg'
 import threecars2 from './threecars2.jpg'
 import threecars3 from './threecars3.jpg'
@@ -39,7 +42,7 @@ import returncar from './returncar.png'
 
 export const assets = {
     logo,logotrans,logosvg,
-    threecars1, threecars2, threecars3, threecars4,threecars5,
+    threecars1, threecars2, threecars3, threecars4,threecars5,three1,three2,three3,
     car1, car6, car11,
     venue,thar,swift,scorpio,glanza,dzire,dzire1,fortuner,fonex,creta,crysta,baleno,brezza,
     avatar1, avatar2, avatar3,avatar4,

@@ -19,7 +19,7 @@ const Contact = () => {
     {
       icon: <FaMapMarkerAlt size={40} className="text-white transition-transform duration-500 hover:rotate-[360deg]" />,
       title: "Address",
-      detail: "Aura Square-73, Sector 4, Noida, UP 201301",
+      detail: "ETA ll Jaitpur Market , Opposite Misgun Wynn Near by HP Petrol pump , Greater Noida Uttar Pradesh,201310",
     },
   ];
 

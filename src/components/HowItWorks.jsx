@@ -10,7 +10,7 @@ const HowItWorks = () => {
     },
     {
       title: "Delivery",
-      description: "We deliver your selected rental car on your visit to our rental location in Delhi NCR.",
+      description: "We deliver your selected rental car on your desired location in Delhi NCR.",
       imgSrc: assets.deliver,
     },
     {
@@ -20,7 +20,7 @@ const HowItWorks = () => {
     },
     {
       title: "Return Car",
-      description: "You can return the car back after completing your trip at our provided location.",
+      description: "You can return the car back after completing your trip at your provided location in Delhi NCR.",
       imgSrc: assets.returncar,
     },
   ];

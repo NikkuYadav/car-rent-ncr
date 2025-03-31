@@ -48,8 +48,7 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold text-2xl mb-3 md:pt-12">Reach Us</h3>
           <p className="text-sm">
-            ORIX Corporation India Limited <br />
-            Plot No - 94, Marol Co-operative Industrial Estate, Andheri-Kurla Road, Andheri(E), Mumbai - 400059
+          ETA ll Jaitpur Market , Opposite Misgun Wynn Near by HP Petrol pump , Greater Noida Uttar Pradesh 201310
           </p>
           <p><IoMailUnread size={25} className="inline-block" /> <a href="mailto:carrentncr@gmail.com">carrentncr@gmail.com</a></p>
           <p>
