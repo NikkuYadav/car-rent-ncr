@@ -4,8 +4,8 @@ import { FaInstagram, FaWhatsapp, FaPhoneAlt ,FaEnvelope } from "react-icons/fa"
 
 const Top = () => {
   return (
-    <div className='flex items-start justify-between text-sm sm:text-lg font-semibold bg-primary text-white py-3 px-1 md:px-[10%]'>
-      <div className='flex'>
+    <div className='flex items-start justify-between text-sm sm:text-lg font-semibold bg-primary text-white py-3 md:px-[10%]'>
+      <div className='flex mx-auto'>
         <ul className='flex gap-2 md:gap-5'>
           
           <li>
@@ -35,9 +35,9 @@ const Top = () => {
       </div>
 
 
-      <div className='hidden sm:flex text-right'>
+      <div className='hidden md:flex text-right mx-auto'>
       
-        <ul className='flex gap-5'>
+        <ul className='flex gap-2 md:gap-5'>
           {/* Instagram Link */}
           <li>
             <a
