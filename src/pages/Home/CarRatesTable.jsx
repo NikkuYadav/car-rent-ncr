@@ -21,7 +21,7 @@ const CarRatesTable = () => {
     <div className="overflow-x-auto">
       <table className="min-w-full border border-gray-700 text-white">
         {/* Table Header */}
-        <thead className="bg-primary">
+        <thead className="bg-black">
           <tr>
             <th className="border border-white px-6 py-3 text-left">CARS MODELS</th>
             <th className="border border-white px-6 py-3">01 TO 04 DAYS</th>
@@ -34,7 +34,7 @@ const CarRatesTable = () => {
         <tbody className="bg-transparent text-sm md:text-xl">
           {carRates.map((car, index) => (
             <tr key={index} className="border border-white text-center hover:bg-gray-500">
-              <td className="border border-white font-bold text-primary px-6 py-3">{car.model}</td>
+              <td className="border border-white font-bold  px-6 py-3">{car.model}</td>
               {car.rates.map((rate, idx) => (
                 <td key={idx} className="border border-white px-6 py-3">
                   {rate} / day

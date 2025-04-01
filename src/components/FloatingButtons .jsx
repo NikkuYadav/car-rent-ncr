@@ -55,7 +55,7 @@ const FloatingButtons = () => {
 
             {/* WhatsApp Button */}
             <a
-                href="https://wa.me/+91 8383801636"
+                href="https://wa.me/+918383801636"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 flex items-center justify-center bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition"

@@ -27,8 +27,8 @@ const OurPackages = () => {
     <div className="relative w-full h-auto flex flex-col items-center justify-center py-12 px-4 md:px-0">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `linear-gradient(rgba(34,193,195,1) , rgba(253,45,150,1))` }}>
-
+        style={{ backgroundImage: `linear-gradient(#09447C, black)` }}
+      >
       </div>
 
       <div className="relative w-full max-w-5xl text-center">
@@ -49,7 +49,7 @@ const OurPackages = () => {
             1024: { slidesPerView: 3 },
           }}
         >
-           {packages.map((car, index) => (
+          {packages.map((car, index) => (
             <SwiperSlide key={index}>
               <div className="bg-white shadow-lg rounded-lg p-4">
                 <div className="relative group overflow-hidden rounded-lg">
