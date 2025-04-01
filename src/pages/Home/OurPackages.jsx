@@ -19,8 +19,8 @@ const OurPackages = () => {
     { id: 8, name: "Maruti Baleno", image: assets.baleno, price: 2400 },
     { id: 9, name: "Toyota Glenza", image: assets.glanza, price: 2800 },
     { id: 10, name: "Maruti Breeza", image: assets.brezza, price: 3000 },
-    { id: 11, name: "Toyota Fortuner", image: assets.fortuner, price: 3000 },
-    { id: 12, name: "Mahindra Thar", image: assets.thar, price: 3000 },
+    { id: 11, name: "Toyota Fortuner", image: assets.fortuner, price: 6000 },
+    { id: 12, name: "Mahindra Thar", image: assets.thar, price: 5000 },
   ]);
 
   return (

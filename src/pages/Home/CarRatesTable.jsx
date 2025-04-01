@@ -1,9 +1,9 @@
 import React from "react";
 
 const carRates = [
-  { model: "FORTUNER", rates: [6000,5800, 5500] },
-  { model: "THAR", rates: [5000,4800, 4500] },
-  { model: "SCORPIO N", rates: [5000,4800, 4500] },
+  { model: "FORTUNER", rates: [6000,5500, 5000] },
+  { model: "THAR", rates: [5000,4500, 4000] },
+  { model: "SCORPIO N", rates: [5000,4500, 4000] },
   { model: "INNOVA CRYSTA", rates: [4500,4300, 4000] },
   { model: "CRETA", rates: [3500,3300, 3000] },
   { model: "VENUE", rates: [3000,2800, 2500] },
