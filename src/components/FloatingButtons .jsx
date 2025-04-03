@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaPhoneAlt, FaWhatsapp ,FaArrowUp } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp, FaArrowUp } from "react-icons/fa";
 
 const FloatingButtons = () => {
 
@@ -55,13 +55,14 @@ const FloatingButtons = () => {
 
             {/* WhatsApp Button */}
             <a
-                href="https://wa.me/+918383801636"
+                href="https://wa.me/918383801636?text=Hello%2C%20I%20am%20interested%20in%20your%20services."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 flex items-center justify-center bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition"
             >
                 <FaWhatsapp className="text-2xl" />
             </a>
+
 
             {/* Scroll to Top Button */}
             {showScrollToTop && (

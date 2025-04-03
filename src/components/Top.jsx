@@ -60,7 +60,7 @@ const Top = () => {
           {/* WhatsApp Link */}
           <li>
             <a
-              href="https://wa.me/+918383801636"
+              href="https://wa.me/918383801636?text=Hello%2C%20I%20am%20interested%20in%20your%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center bg-white border-2 border-green-500 rounded-full px-3 py-1 shadow-lg"
