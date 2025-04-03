@@ -19,7 +19,7 @@ const Contact = () => {
     {
       icon: <FaMapMarkerAlt size={40} className="text-white transition-transform duration-500 hover:rotate-[360deg]" />,
       title: "Address",
-      detail: "ETA ll Jaitpur Market , Opposite Misgun Wynn Near by HP Petrol pump , Greater Noida Uttar Pradesh,201310",
+      detail: "ETA ll Jaitpur Market , Opposite Migsun Wynn Near by HP Petrol pump , Greater Noida Uttar Pradesh,201310",
     },
   ];
 

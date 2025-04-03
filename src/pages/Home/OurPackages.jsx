@@ -55,8 +55,8 @@ const OurPackages = () => {
                 <div className="relative group overflow-hidden rounded-lg">
                   <img
                     src={car.image}
-                    alt={car.model}
-                    className="w-full h-[200px] rounded-lg transition-transform duration-300 group-hover:scale-105"
+                    alt={car.name}
+                    className="w-full h-[200px] min-w-80 rounded-lg transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300"></div>
                 </div>

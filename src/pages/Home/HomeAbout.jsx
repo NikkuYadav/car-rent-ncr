@@ -88,7 +88,7 @@ const HomeAbout = () => {
                 <img
                   src={img}
                   alt={`Car ${index + 1}`}
-                  className="w-full h-56 object-cover border-2 border-white shadow-lg cursor-pointer"
+                  className="w-full h-56 min-w-80 object-cover border-2 border-white shadow-lg cursor-pointer"
                 />
               </SwiperSlide>
             ))}

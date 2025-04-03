@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="text-white px-[10%] pb-3"
+      className="text-white px-[8%] pb-3"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(${assets.threecars1})`,
         backgroundSize: "cover",
@@ -20,7 +20,7 @@ const Footer = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="grid md:grid-cols-3 gap-10 justify-center ">
+      <div className="grid md:grid-cols-3 gap-5 lg:gap-10 justify-center ">
         {/* Left Section - Brand Info */}
         <div className="text-center">
           <img
@@ -35,7 +35,7 @@ const Footer = () => {
 
 
         {/* Quick Links */}
-        <div className="md:ml-20">
+        <div className="md:ml-10 lg:ml-20">
           <h3 className="font-semibold text-2xl mb-3 md:pt-12">Quick Links</h3>
           <ul className="space-y-2 text-lg pl-2">
             <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
@@ -48,7 +48,7 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold text-2xl mb-3 md:pt-12">Reach Us</h3>
           <p className="text-sm">
-          ETA ll Jaitpur Market , Opposite Misgun Wynn Near by HP Petrol pump , Greater Noida Uttar Pradesh 201310
+          ETA ll Jaitpur Market , Opposite Migsun Wynn Near by HP Petrol pump , Greater Noida Uttar Pradesh 201310
           </p>
           <p><IoMailUnread size={25} className="inline-block" /> <a href="mailto:carrentncr@gmail.com">carrentncr@gmail.com</a></p>
           <p>
@@ -58,7 +58,7 @@ const Footer = () => {
             <a href="tel:9313314040">+91-9313314040</a>
           </p>
           <div className="flex space-x-4 mt-4">
-            <ul className='flex gap-5'>
+            <ul className='flex md:flex-col lg:flex-row gap-5'>
               {/* Instagram Link */}
               <li>
                 <a

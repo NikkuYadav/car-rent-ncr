@@ -23,9 +23,9 @@ const Banner = () => {
             description: "Enjoy the freedom to self-drive your rental car to any destination across INDIA.",
         },
         {
-            image: assets.threecars4,
+            image: assets.three4,
             title: "Pick & Drop Service",
-            description: "Service provided by Jittu Nagar and Sumit Nagar. Contact No.  9310104040 and +9313314040",
+            description: "Jitender and Sumit. Contact No.  9310104040 and 9313314040",
         },
     ];
 
