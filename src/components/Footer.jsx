@@ -54,7 +54,6 @@ const Footer = () => {
           <p>
             <BiSolidPhoneCall size={25} className="inline-block" />
             <a href="tel:8383801636">+91-8383801636</a>,
-            <a href="tel:9310104040">+91-9310104040</a><br />
             <a href="tel:9313314040">+91-9313314040</a>
           </p>
           <div className="flex space-x-4 mt-4">

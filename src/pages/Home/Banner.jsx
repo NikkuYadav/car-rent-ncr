@@ -25,7 +25,7 @@ const Banner = () => {
         {
             image: assets.three4,
             title: "Pick & Drop Service",
-            description: "Jitender and Sumit. Contact No.  9310104040 and 9313314040",
+            description: "Jitender and Sumit. Contact No. and 9313314040",
         },
     ];
 
